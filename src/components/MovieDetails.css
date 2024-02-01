@@ -1,0 +1,195 @@
+.MovieDetailsContainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to left, transparent 0%, rgba(7, 7, 7, 0.925),rgba(7, 7, 7, 0.925));
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+  
+  .MovieDetailsContainer img {
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 40px;
+  }
+  
+  .MovieDetailsInfo {
+    margin-top: -30px;
+    flex: 1;
+    color: rgb(238, 238, 232);
+
+    h1{
+      margin-left: 0px;
+    }
+  }
+
+  .rating-details {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+    width: 202px;
+    padding: 5px;
+    margin-left: -105px;
+    margin-top: -8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  
+    img {
+      margin-top: 2px;
+      margin-left: 90px;
+      margin-right: 5px;
+      width: 50px;
+      height: 30px;
+    }
+  }
+
+  .Genres{
+    display: flex;
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  .GenreItem {
+    color: #0c0b24;
+    background-color: white;
+    font-weight: bold;
+    font-size: small;
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .Language{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 70%;
+  }
+  
+  .Summary {
+    text-align: justify;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .Show{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 70%;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .book{
+    background: linear-gradient(to right, #d33ebf, #413db6);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: black;
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .book:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #e76ad2, #5941c0);
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: rgba(7, 7, 7, 0.925);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .movie-details-box {
+    flex: 1;
+    width: 900px;
+  }
+  
+  .booking-form {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .close {
+    display: flex;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: -10px;
+  }  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .submit,
+.cancel {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+}
+
+.submit {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.cancel {
+  background-color: red;
+  color: #fff;
+  margin-left: 160px;
+  margin-top: -35px;
+}

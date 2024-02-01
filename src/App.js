@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MovieList from './components/MovieList';
+import MovieDetails from './components/MovieDetails';
+import ConfirmationPage from './components/ConfirmationPage';
+import NavBar from './components/NavBar';
+import Movies from './components/Movies'
+import SignUpPage from './components/SignUpPage'
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    document.title = 'Movtix';
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<MovieList />} />
 
+          <Route path="/movie/:id" element={<MovieDetails />} />
+
+          <Route path="/movies" element={<Movies />} />
+
+          <Route path="/confirm" element={<ConfirmationPage />} />
+
+          <Route path="/signup" element={<SignUpPage />} />
+
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 export default App;
